@@ -1,5 +1,5 @@
 const express = require("express");
-const connection = require("./db_config");
+const connection = require("./dbConfig");
 const userRoutes = require("./routes/userRoutes");
 const {
   handleNotFound,

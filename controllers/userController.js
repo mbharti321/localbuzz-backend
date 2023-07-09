@@ -1,5 +1,5 @@
 // userController.js
-const connection = require("../db_config");
+const connection = require("../dbConfig");
 
 exports.getUsers = (req, res) => {
   selectQuery = "SELECT * FROM user WHERE id < 5";
