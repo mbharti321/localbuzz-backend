@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.send("Hello, world!\nWelcome to LocalBizz backend API!");
 });
 
-// Use the userRoutes middleware for the "/user" route
+// Use the userRoutes for the "/user" route
 app.use("/user", userRoutes);
 
 // Handle 404 - Not Found

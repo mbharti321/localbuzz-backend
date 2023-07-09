@@ -18,6 +18,27 @@ This project is backend project for Business listing and reviewing.
 - The root URL ("/") will display a "Hello, world!" message.
 - The "/user" endpoint will retrieve users from the database where the ID is less than 5
 
+### Folder structure
+```bash
+project/
+| - controllers/         # Contains controller files to handle route logic
+|   | - userController.js
+|   | - ...
+| - middleware/          # Contains middleware files for custom middleware functions
+|   | - errorMiddleware.js
+|   | - ...
+| - routes/              # Contains route files to define routes and reference controllers
+|   | - userRoutes.js
+|   | - ...
+| - dbConfig.js          # Configuration file for database connection
+| - index.js             # Main application file, to start the server.
+| - package.json         # Project dependencies and scripts
+| - README.md            # Project documentation and instructions
+| - .gitignore           # Specifies files and directories to be ignored by Git
+| - ...
+
+```
+
 ### Code explanation
 
 The app.get("/") route retrieves all the records from the employees table and sends them back to the client.
