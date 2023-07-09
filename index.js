@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 
 // get users
 app.get("/user", (req, res) => {
-  selectQuery = "SELECT * FROM users";
+  selectQuery = "SELECT * FROM users WHERE id <5";
   connection.query(selectQuery, (err, result) => {
     if (err) throw err;
     res.send(result);
