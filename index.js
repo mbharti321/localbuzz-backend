@@ -2,6 +2,7 @@ const express = require("express");
 const connection = require("./db_config");
 
 var app = express();
+app.use(express.json());
 port = 3000;
 
 // hello world
@@ -24,14 +25,16 @@ app.get("/user", (req, res) => {
 });
 
 // register user
+/* payload: {
+    "username": "JohnDoe",
+    "password": "password",
+    "email": "mbharti@gmail.com"
+  }
+*/
 app.post("/user/register", (req, res) => {
-  const user = {
-    // id: ,
-    username: "JohnDoe",
-    password: "password",
-    email: "mbharti@gmail.com",
-  };
-
+  const { username, password, email } = req.body;
+  const user = { username, password, email };
+  // console.log(user);
   const insertQuery = "INSERT INTO user SET ?";
   connection.query(insertQuery, user, (err, result) => {
     if (err) {
