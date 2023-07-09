@@ -6,7 +6,7 @@ This project is backend project for Business listing and reviewing.
 
 - Intall all dependaencies: `npm install`
 - Intall **nodemon** that helps in **automatically restarting** your Node.js application when file changes are detected
-  
+
   `npm install -g nodemon`
 
 - Run the app `nodemon index.js`
@@ -27,3 +27,7 @@ The connection.query() method is used to execute a SQL query against the databas
 The app.listen() method starts the Express server on port 3000.
 
 The connection.connect() method connects to the MySQL database. The err parameter will be set if there is an error, and the results parameter will be set to a connection object.
+
+---
+### Extra
+- Node Folder Structure: [node-js-project-structure-a-short-guide](https://dreamix.eu/blog/frontpage/node-js-project-structure-a-short-guide)
