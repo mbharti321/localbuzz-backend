@@ -1,7 +1,7 @@
 # localbuzz-backend
 
 This project is backend project for Business listing and reviewing.
-
+- SRS and more details: [SRS and backend](https://mbharti321.notion.site/Back-end-23befcbc436342c6a212caa10742a323)
 ### Get started
 
 - Intall all dependaencies: `npm install`
@@ -54,3 +54,8 @@ The connection.connect() method connects to the MySQL database. The err paramete
 ---
 ### Extra
 - Node Folder Structure: [node-js-project-structure-a-short-guide](https://dreamix.eu/blog/frontpage/node-js-project-structure-a-short-guide)
+
+
+#### TODO
+- export from module in node
+- node folder structure basic
