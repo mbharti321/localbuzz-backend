@@ -38,6 +38,8 @@ project/
 | - ...
 
 ```
+- Understand this folder structure: https://chat.openai.com/share/3da882fb-db95-4f83-b034-5ac3bbb8e42b
+- Node Folder Structure: [node-js-project-structure-a-short-guide](https://dreamix.eu/blog/frontpage/node-js-project-structure-a-short-guide)
 
 ### Code explanation
 
