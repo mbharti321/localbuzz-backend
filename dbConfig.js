@@ -1,11 +1,12 @@
 const mysql = require("mysql2");
+require("dotenv").config();
 
-// set connection configuration
-var connection = mysql.createConnection({
-  host: "db4free.net",
-  user: "mcube_admin",
-  password: "mcube_password",
-  database: "business_listing",
+// Set connection configuration
+const connection = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DATABASE,
 });
 
 module.exports = connection;
